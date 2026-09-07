@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: nexa-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: nexa123
+      POSTGRES_DB: nexa_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - nexa_pgdata:/var/lib/postgresql/data
+
+volumes:
+  nexa_pgdata:
