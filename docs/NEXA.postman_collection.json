@@ -1,0 +1,15 @@
+{
+  "info": {
+    "name": "NEXA · Backend Financiero",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "Health", "request": { "method": "GET", "url": "http://localhost:3000/health" } },
+    { "name": "Expensas · listar", "request": { "method": "GET", "url": "http://localhost:3000/api/expensas" } },
+    { "name": "Expensas · pendientes", "request": { "method": "GET", "url": "http://localhost:3000/api/expensas?estado=PENDIENTE" } },
+    { "name": "Expensas · resumen", "request": { "method": "GET", "url": "http://localhost:3000/api/expensas/resumen" } },
+    { "name": "Expensas · detalle", "request": { "method": "GET", "url": "http://localhost:3000/api/expensas/1" } },
+    { "name": "Cuentas · listar", "request": { "method": "GET", "url": "http://localhost:3000/api/cuentas" } },
+    { "name": "Cuentas · movimientos", "request": { "method": "GET", "url": "http://localhost:3000/api/cuentas/1/movimientos" } }
+  ]
+}
